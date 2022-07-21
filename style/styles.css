@@ -63,6 +63,14 @@ color: bisque;
     flex-direction: column;
     text-align: center;
 }
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.text .transfer1{
+    border: 1px solid black;
+    width: 80px;
+}
 
 #web{
     border: 2px solid black;
@@ -114,6 +122,9 @@ color: bisque;
     width: 80%;
 
 }
+.thank{
+    visibility: hidden;
+}
  /* footer */
 
  footer{
@@ -142,6 +153,11 @@ color: bisque;
     padding-top: 20px;
     font-size: 1.5vh;
 }
+.icon{
+    display: flex;
+    text-align: center;
+
+}
 /* website 2  */
 
     .text{
@@ -159,10 +175,20 @@ color: bisque;
     }
 /* mobile screen  */
 
+
+@media screen and (max-width:576px) {
+    main{
+        overflow-x: hidden;
+    }
+}
+
+
+
 @media screen and (max-width:576px) {
     .container {
         flex-direction: column;
         width: 100%;
+        
 
     }
 
@@ -215,6 +241,11 @@ color: bisque;
     }
 
 }
+@media screen and (max-width:576px){
+    .icon{
+        flex-direction: column;
+    }
+}
 /* for tab view  */
 @media screen and (min-width:577px) and (max-width:992px) {
     .container{
@@ -260,10 +291,20 @@ color: bisque;
     .strong{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-       
+       gap: 20px;
     }
     
 }
 @media screen and (min-width:577px) and (max-width:992px) {
-    
+    .thank{
+        visibility: visible;
+        background-color: brown;
+        text-align: center;
+    }
+}
+@media screen and (max-width:576px) and (max-width:992px)  {
+    .icon{
+        justify-content: center;
+        
+    }
 }
